@@ -6,6 +6,8 @@
 #include <compare>
 #include <set>
 #include <map>
+#include <optional>
+#include <functional>
 
 struct Boundary { uint8_t width; uint8_t height; };
 struct Cell {
