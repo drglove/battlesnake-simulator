@@ -54,7 +54,7 @@ void Game::startBattle() {
 
     // Shuffle the snakes so that we don't get some determinism in starting location.
     std::random_device randomDevice;
-    std::mt19937 rng(randomDevice);
+    std::mt19937 rng(randomDevice());
     std::shuffle(mSnakes.begin(), mSnakes.end(), rng);
 
     // TODO: Disperse the snakes randomly, give them some body, and some food according to how the tournament will run approximately.
