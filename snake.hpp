@@ -24,7 +24,7 @@ static constexpr Health MaxHealth{ 100 };
 
 struct SnakeID {
     uint32_t value;
-    friend bool operator==(SnakeID const& lhs, SnakeID const& rhs) = default;
+    friend auto operator<=>(SnakeID const& lhs, SnakeID const& rhs) = default;
 };
 
 struct Snake {
